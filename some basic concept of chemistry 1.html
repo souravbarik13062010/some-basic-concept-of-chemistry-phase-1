@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Basic Concepts of Chemistry — Phase 1 Mock Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .test-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            color: #555;
+            background: #eef2f5;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #dcdde1;
+        }
+        .question-card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #3498db;
+        }
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        .question-number {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .ncert-tag {
+            font-size: 0.85em;
+            background-color: #e8f4f8;
+            color: #2980b9;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .question-text {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #2d3436;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .options label {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            background: #f9fbfc;
+            padding: 12px 18px;
+            border: 1px solid #dcdde1;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 1.05em;
+        }
+        .options label:hover {
+            background: #ecf0f1;
+            border-color: #bdc3c7;
+        }
+        input[type="radio"] {
+            transform: scale(1.3);
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .submit-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        #submit-btn {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 4px 6px rgba(46, 204, 113, 0.3);
+        }
+        #submit-btn:hover {
+            background-color: #27ae60;
+        }
+        #result {
+            display: none;
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            border-top: 5px solid #2ecc71;
+        }
+        #result h2 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        #result p {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .question-card { padding: 15px; }
+            .question-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Some Basic Concepts of Chemistry</h1>
+        <div class="test-info">
+            <strong>Phase 1</strong><br>
+            Total Questions: 50 (Q.1 to Q.50)<br>
+            <em>Choose one option for each question. Click "Submit Test" at the bottom to check your score.</em>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 1</span>
+                <span class="ncert-tag">[NCERT 1.1]</span>
+            </div>
+            <p class="question-text">Which of the following life-saving drugs is specifically mentioned in NCERT as being isolated from plant or animal sources and used to treat AIDS patients?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> A) Cisplatin</label>
+                <label><input type="radio" name="q1" value="B"> B) Taxol</label>
+                <label><input type="radio" name="q1" value="C"> C) Azidothymidine (AZT)</label>
+                <label><input type="radio" name="q1" value="D"> D) Penicillin</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 2</span>
+                <span class="ncert-tag">[NCERT 1.1]</span>
+            </div>
+            <p class="question-text">According to NCERT, which of the following pairs of drugs are highly effective in cancer therapy?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> A) Cisplatin and Taxol</label>
+                <label><input type="radio" name="q2" value="B"> B) Azidothymidine and Paracetamol</label>
+                <label><input type="radio" name="q2" value="C"> C) Chloroquine and Aspirin</label>
+                <label><input type="radio" name="q2" value="D"> D) Taxol and Streptomycin</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 3</span>
+                <span class="ncert-tag">[NCERT 1.1]</span>
+            </div>
+            <p class="question-text">Chemistry has helped in finding safer alternatives to hazardous refrigerants like CFCs. What environmental issue is primarily caused by CFCs?</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="A"> A) Acid rain</label>
+                <label><input type="radio" name="q3" value="B"> B) Stratospheric ozone depletion</label>
+                <label><input type="radio" name="q3" value="C"> C) Eutrophication of lakes</label>
+                <label><input type="radio" name="q3" value="D"> D) Soil alkalization</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 4</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">Which of the following statements correctly describes the arrangement of particles in a solid?</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="A"> A) Particles are close to each other but can move around freely.</label>
+                <label><input type="radio" name="q4" value="B"> B) Particles are held very close to each other in an orderly fashion and there is not much freedom of movement.</label>
+                <label><input type="radio" name="q4" value="C"> C) Particles are far apart and their movement is easy and fast.</label>
+                <label><input type="radio" name="q4" value="D"> D) Particles possess high compressibility and lack definite shape.</label>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 5</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">Which state of matter has a definite volume but lacks a definite shape, taking the shape of the container it is placed in?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="A"> A) Solid</label>
+                <label><input type="radio" name="q5" value="B"> B) Liquid</label>
+                <label><input type="radio" name="q5" value="C"> C) Gas</label>
+                <label><input type="radio" name="q5" value="D"> D) Both Gas and Liquid</label>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 6</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">At the macroscopic or bulk level, matter can be broadly classified into two categories. What are they?</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="A"> A) Elements and Compounds</label>
+                <label><input type="radio" name="q6" value="B"> B) Atoms and Molecules</label>
+                <label><input type="radio" name="q6" value="C"> C) Mixtures and Pure Substances</label>
+                <label><input type="radio" name="q6" value="D"> D) Homogeneous and Heterogeneous materials</label>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 7</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">In which type of mixture do the components mix completely with each other, resulting in a uniform composition throughout the bulk?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="A"> A) Heterogeneous mixture</label>
+                <label><input type="radio" name="q7" value="B"> B) Homogeneous mixture</label>
+                <label><input type="radio" name="q7" value="C"> C) Elemental mixture</label>
+                <label><input type="radio" name="q7" value="D"> D) Pure substance</label>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 8</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">According to NCERT, which of the following is an example of a homogeneous mixture?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="A"> A) A mixture of salt and sugar</label>
+                <label><input type="radio" name="q8" value="B"> B) Grains and pulses containing dirt pieces</label>
+                <label><input type="radio" name="q8" value="C"> C) Air</label>
+                <label><input type="radio" name="q8" value="D"> D) Sand in water</label>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 9</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">Pure substances differ from mixtures in that pure substances:</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="A"> A) Can be separated by simple physical methods</label>
+                <label><input type="radio" name="q9" value="B"> B) Have a variable composition</label>
+                <label><input type="radio" name="q9" value="C"> C) Have fixed composition</label>
+                <label><input type="radio" name="q9" value="D"> D) Always contain only one type of atom</label>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 10</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">Which of the following consists of only one type of atoms?</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="A"> A) Mixture</label>
+                <label><input type="radio" name="q10" value="B"> B) Compound</label>
+                <label><input type="radio" name="q10" value="C"> C) Element</label>
+                <label><input type="radio" name="q10" value="D"> D) Solution</label>
+            </div>
+        </div>
+
+        <!-- Question 11 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 11</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">When two or more atoms of different elements combine in a definite ratio, the resulting molecule is known as a:</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="A"> A) Homogeneous mixture</label>
+                <label><input type="radio" name="q11" value="B"> B) Heterogeneous mixture</label>
+                <label><input type="radio" name="q11" value="C"> C) Compound</label>
+                <label><input type="radio" name="q11" value="D"> D) Pure element</label>
+            </div>
+        </div>
+
+        <!-- Question 12 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 12</span>
+                <span class="ncert-tag">[NCERT 1.2]</span>
+            </div>
+            <p class="question-text">How do the properties of a compound relate to the properties of its constituent elements?</p>
+            <div class="options">
+                <label><input type="radio" name="q12" value="A"> A) The compound retains the properties of its heaviest constituent element.</label>
+                <label><input type="radio" name="q12" value="B"> B) The properties of a compound are an average of the properties of its elements.</label>
+                <label><input type="radio" name="q12" value="C"> C) The properties of a compound are different from those of its constituent elements.</label>
+                <label><input type="radio" name="q12" value="D"> D) A compound exhibits identical physical but different chemical properties as its elements.</label>
+            </div>
+        </div>
+
+        <!-- Question 13 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 13</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">Which of the following is an example of a chemical property?</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="A"> A) Melting point</label>
+                <label><input type="radio" name="q13" value="B"> B) Combustibility</label>
+                <label><input type="radio" name="q13" value="C"> C) Odour</label>
+                <label><input type="radio" name="q13" value="D"> D) Density</label>
+            </div>
+        </div>
+
+        <!-- Question 14 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 14</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">Properties that can be measured or observed without changing the identity or the composition of the substance are called:</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="A"> A) Chemical properties</label>
+                <label><input type="radio" name="q14" value="B"> B) Microscopic properties</label>
+                <label><input type="radio" name="q14" value="C"> C) Physical properties</label>
+                <label><input type="radio" name="q14" value="D"> D) Reactivity properties</label>
+            </div>
+        </div>
+
+        <!-- Question 15 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 15</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">The International System of Units (SI) has how many base units?</p>
+            <div class="options">
+                <label><input type="radio" name="q15" value="A"> A) 5</label>
+                <label><input type="radio" name="q15" value="B"> B) 6</label>
+                <label><input type="radio" name="q15" value="C"> C) 7</label>
+                <label><input type="radio" name="q15" value="D"> D) 9</label>
+            </div>
+        </div>
+
+        <!-- Question 16 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 16</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">What is the SI base unit for luminous intensity?</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="A"> A) Ampere (A)</label>
+                <label><input type="radio" name="q16" value="B"> B) Candela (cd)</label>
+                <label><input type="radio" name="q16" value="C"> C) Mole (mol)</label>
+                <label><input type="radio" name="q16" value="D"> D) Lumen (lm)</label>
+            </div>
+        </div>
+
+        <!-- Question 17 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 17</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">What is the SI base unit for amount of substance?</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="A"> A) Kilogram</label>
+                <label><input type="radio" name="q17" value="B"> B) Gram</label>
+                <label><input type="radio" name="q17" value="C"> C) Mole</label>
+                <label><input type="radio" name="q17" value="D"> D) Number of atoms</label>
+            </div>
+        </div>
+
+        <!-- Question 18 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 18</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">Which of the following is the correct matching of the prefix and its corresponding multiplier?</p>
+            <div class="options">
+                <label><input type="radio" name="q18" value="A"> A) Mega = 10<sup>9</sup></label>
+                <label><input type="radio" name="q18" value="B"> B) Pico = 10<sup>-15</sup></label>
+                <label><input type="radio" name="q18" value="C"> C) Nano = 10<sup>-9</sup></label>
+                <label><input type="radio" name="q18" value="D"> D) Micro = 10<sup>-3</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 19 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 19</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">The prefix "femto" corresponds to the multiplier:</p>
+            <div class="options">
+                <label><input type="radio" name="q19" value="A"> A) 10<sup>-15</sup></label>
+                <label><input type="radio" name="q19" value="B"> B) 10<sup>-12</sup></label>
+                <label><input type="radio" name="q19" value="C"> C) 10<sup>-18</sup></label>
+                <label><input type="radio" name="q19" value="D"> D) 10<sup>15</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 20 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 20</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">Which of the following statements about mass and weight is correct?</p>
+            <div class="options">
+                <label><input type="radio" name="q20" value="A"> A) Mass of a substance varies from place to place due to change in gravity.</label>
+                <label><input type="radio" name="q20" value="B"> B) Weight is the amount of matter present in a substance and is constant.</label>
+                <label><input type="radio" name="q20" value="C"> C) Mass of a substance is constant whereas its weight may vary from one place to another.</label>
+                <label><input type="radio" name="q20" value="D"> D) The SI unit of weight is kilogram.</label>
+            </div>
+        </div>
+
+        <!-- Question 21 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 21</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">What is the SI unit of mass?</p>
+            <div class="options">
+                <label><input type="radio" name="q21" value="A"> A) Gram</label>
+                <label><input type="radio" name="q21" value="B"> B) Kilogram</label>
+                <label><input type="radio" name="q21" value="C"> C) Milligram</label>
+                <label><input type="radio" name="q21" value="D"> D) Metric ton</label>
+            </div>
+        </div>
+
+        <!-- Question 22 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 22</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">Which of the following volume conversions is accurate?</p>
+            <div class="options">
+                <label><input type="radio" name="q22" value="A"> A) 1 L = 100 cm<sup>3</sup></label>
+                <label><input type="radio" name="q22" value="B"> B) 1 L = 1 dm<sup>3</sup></label>
+                <label><input type="radio" name="q22" value="C"> C) 1 L = 1 m<sup>3</sup></label>
+                <label><input type="radio" name="q22" value="D"> D) 1 L = 1000 dm<sup>3</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 23 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 23</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">The SI derived unit of density is:</p>
+            <div class="options">
+                <label><input type="radio" name="q23" value="A"> A) g cm<sup>-3</sup></label>
+                <label><input type="radio" name="q23" value="B"> B) kg m<sup>-3</sup></label>
+                <label><input type="radio" name="q23" value="C"> C) g L<sup>-1</sup></label>
+                <label><input type="radio" name="q23" value="D"> D) kg L<sup>-1</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 24 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 24</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">Which of the following is the correct relationship between the Fahrenheit and Celsius temperature scales?</p>
+            <div class="options">
+                <label><input type="radio" name="q24" value="A"> A) °F = 5/9(°C) + 32</label>
+                <label><input type="radio" name="q24" value="B"> B) °F = 9/5(°C) + 32</label>
+                <label><input type="radio" name="q24" value="C"> C) °C = 9/5(°F - 32)</label>
+                <label><input type="radio" name="q24" value="D"> D) °F = 9/5(°C) - 32</label>
+            </div>
+        </div>
+
+        <!-- Question 25 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 25</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">What is the exact relationship between the Kelvin and Celsius scales?</p>
+            <div class="options">
+                <label><input type="radio" name="q25" value="A"> A) K = °C + 273.00</label>
+                <label><input type="radio" name="q25" value="B"> B) K = °C + 273.15</label>
+                <label><input type="radio" name="q25" value="C"> C) K = °C - 273.15</label>
+                <label><input type="radio" name="q25" value="D"> D) K = 5/9(°C) + 273.15</label>
+            </div>
+        </div>
+
+        <!-- Question 26 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 26</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">It is mentioned in NCERT that temperatures below 0 °C (i.e., negative values) are possible on the Celsius scale, but negative values are not possible on the:</p>
+            <div class="options">
+                <label><input type="radio" name="q26" value="A"> A) Fahrenheit scale</label>
+                <label><input type="radio" name="q26" value="B"> B) Kelvin scale</label>
+                <label><input type="radio" name="q26" value="C"> C) Rankine scale</label>
+                <label><input type="radio" name="q26" value="D"> D) Both Fahrenheit and Kelvin scales</label>
+            </div>
+        </div>
+
+        <!-- Question 27 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 27</span>
+                <span class="ncert-tag">[NCERT 1.3]</span>
+            </div>
+            <p class="question-text">Normal human body temperature is approximately 37 °C. What is its equivalent on the Fahrenheit scale?</p>
+            <div class="options">
+                <label><input type="radio" name="q27" value="A"> A) 96.6 °F</label>
+                <label><input type="radio" name="q27" value="B"> B) 98.6 °F</label>
+                <label><input type="radio" name="q27" value="C"> C) 99.6 °F</label>
+                <label><input type="radio" name="q27" value="D"> D) 100.4 °F</label>
+            </div>
+        </div>
+
+        <!-- Question 28 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 28</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">In scientific notation, any number can be represented in the form N × 10<sup>n</sup>. What are the allowed values for N?</p>
+            <div class="options">
+                <label><input type="radio" name="q28" value="A"> A) 0 ≤ N < 10</label>
+                <label><input type="radio" name="q28" value="B"> B) 1 ≤ N < 10</label>
+                <label><input type="radio" name="q28" value="C"> C) 1 ≤ N ≤ 100</label>
+                <label><input type="radio" name="q28" value="D"> D) 0.1 ≤ N < 10</label>
+            </div>
+        </div>
+
+        <!-- Question 29 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 29</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Express the number 0.00016 in standard scientific notation.</p>
+            <div class="options">
+                <label><input type="radio" name="q29" value="A"> A) 1.6 × 10<sup>-4</sup></label>
+                <label><input type="radio" name="q29" value="B"> B) 1.6 × 10<sup>-5</sup></label>
+                <label><input type="radio" name="q29" value="C"> C) 16 × 10<sup>-5</sup></label>
+                <label><input type="radio" name="q29" value="D"> D) 0.16 × 10<sup>-3</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 30 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 30</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Perform the following calculation and express the result in proper scientific notation: (5.6 × 10<sup>5</sup>) × (6.9 × 10<sup>8</sup>)</p>
+            <div class="options">
+                <label><input type="radio" name="q30" value="A"> A) 38.64 × 10<sup>13</sup></label>
+                <label><input type="radio" name="q30" value="B"> B) 3.864 × 10<sup>14</sup></label>
+                <label><input type="radio" name="q30" value="C"> C) 3.864 × 10<sup>13</sup></label>
+                <label><input type="radio" name="q30" value="D"> D) 38.64 × 10<sup>40</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 31 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 31</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">The closeness of various measurements for the same quantity is referred to as:</p>
+            <div class="options">
+                <label><input type="radio" name="q31" value="A"> A) Accuracy</label>
+                <label><input type="radio" name="q31" value="B"> B) Precision</label>
+                <label><input type="radio" name="q31" value="C"> C) Certainty</label>
+                <label><input type="radio" name="q31" value="D"> D) Exactness</label>
+            </div>
+        </div>
+
+        <!-- Question 32 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 32</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">The agreement of a particular value to the true value of the result is called:</p>
+            <div class="options">
+                <label><input type="radio" name="q32" value="A"> A) Precision</label>
+                <label><input type="radio" name="q32" value="B"> B) Reproducibility</label>
+                <label><input type="radio" name="q32" value="C"> C) Accuracy</label>
+                <label><input type="radio" name="q32" value="D"> D) Significance</label>
+            </div>
+        </div>
+
+        <!-- Question 33 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 33</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">A student measures a sample with a true mass of 2.00 g. The student's two measurements are 1.95 g and 1.93 g. These values are:</p>
+            <div class="options">
+                <label><input type="radio" name="q33" value="A"> A) Both precise and accurate</label>
+                <label><input type="radio" name="q33" value="B"> B) Neither precise nor accurate</label>
+                <label><input type="radio" name="q33" value="C"> C) Precise but not accurate</label>
+                <label><input type="radio" name="q33" value="D"> D) Accurate but not precise</label>
+            </div>
+        </div>
+
+        <!-- Question 34 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 34</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">How many significant figures are present in 0.0025?</p>
+            <div class="options">
+                <label><input type="radio" name="q34" value="A"> A) 5</label>
+                <label><input type="radio" name="q34" value="B"> B) 4</label>
+                <label><input type="radio" name="q34" value="C"> C) 3</label>
+                <label><input type="radio" name="q34" value="D"> D) 2</label>
+            </div>
+        </div>
+
+        <!-- Question 35 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 35</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">How many significant figures are present in the number 208?</p>
+            <div class="options">
+                <label><input type="radio" name="q35" value="A"> A) 2</label>
+                <label><input type="radio" name="q35" value="B"> B) 3</label>
+                <label><input type="radio" name="q35" value="C"> C) 1</label>
+                <label><input type="radio" name="q35" value="D"> D) Infinite</label>
+            </div>
+        </div>
+
+        <!-- Question 36 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 36</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Which of the following rules regarding significant figures is INCORRECT according to NCERT?</p>
+            <div class="options">
+                <label><input type="radio" name="q36" value="A"> A) All non-zero digits are significant.</label>
+                <label><input type="radio" name="q36" value="B"> B) Zeros preceding to first non-zero digit are significant.</label>
+                <label><input type="radio" name="q36" value="C"> C) Zeros between two non-zero digits are significant.</label>
+                <label><input type="radio" name="q36" value="D"> D) Zeros at the end or right of a number are significant provided they are on the right side of the decimal point.</label>
+            </div>
+        </div>
+
+        <!-- Question 37 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 37</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">What is the number of significant figures in 500.0?</p>
+            <div class="options">
+                <label><input type="radio" name="q37" value="A"> A) 1</label>
+                <label><input type="radio" name="q37" value="B"> B) 2</label>
+                <label><input type="radio" name="q37" value="C"> C) 3</label>
+                <label><input type="radio" name="q37" value="D"> D) 4</label>
+            </div>
+        </div>
+
+        <!-- Question 38 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 38</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Counting numbers of objects, for example, 2 balls or 20 eggs, have how many significant figures?</p>
+            <div class="options">
+                <label><input type="radio" name="q38" value="A"> A) 1</label>
+                <label><input type="radio" name="q38" value="B"> B) 2</label>
+                <label><input type="radio" name="q38" value="C"> C) 0</label>
+                <label><input type="radio" name="q38" value="D"> D) Infinite</label>
+            </div>
+        </div>
+
+        <!-- Question 39 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 39</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Express 126,000 in scientific notation to show exactly three significant figures.</p>
+            <div class="options">
+                <label><input type="radio" name="q39" value="A"> A) 1.26 × 10<sup>5</sup></label>
+                <label><input type="radio" name="q39" value="B"> B) 1.260 × 10<sup>5</sup></label>
+                <label><input type="radio" name="q39" value="C"> C) 1.2600 × 10<sup>5</sup></label>
+                <label><input type="radio" name="q39" value="D"> D) 1.26000 × 10<sup>5</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 40 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 40</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Add the following numbers and report the result to the correct number of significant figures: 12.11 + 18.0 + 1.012</p>
+            <div class="options">
+                <label><input type="radio" name="q40" value="A"> A) 31.122</label>
+                <label><input type="radio" name="q40" value="B"> B) 31.12</label>
+                <label><input type="radio" name="q40" value="C"> C) 31.1</label>
+                <label><input type="radio" name="q40" value="D"> D) 31</label>
+            </div>
+        </div>
+
+        <!-- Question 41 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 41</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Multiply 2.5 by 1.25 and report the answer to the correct number of significant figures.</p>
+            <div class="options">
+                <label><input type="radio" name="q41" value="A"> A) 3.125</label>
+                <label><input type="radio" name="q41" value="B"> B) 3.13</label>
+                <label><input type="radio" name="q41" value="C"> C) 3.1</label>
+                <label><input type="radio" name="q41" value="D"> D) 3.0</label>
+            </div>
+        </div>
+
+        <!-- Question 42 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 42</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">When rounding off numbers, if the rightmost digit to be removed is 5, what is the rule if the preceding number is an even number?</p>
+            <div class="options">
+                <label><input type="radio" name="q42" value="A"> A) The preceding number is increased by 1.</label>
+                <label><input type="radio" name="q42" value="B"> B) The preceding number is not changed.</label>
+                <label><input type="radio" name="q42" value="C"> C) The preceding number is decreased by 1.</label>
+                <label><input type="radio" name="q42" value="D"> D) Rounding off is not possible in this case.</label>
+            </div>
+        </div>
+
+        <!-- Question 43 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 43</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Round off the number 1.386 to three significant figures.</p>
+            <div class="options">
+                <label><input type="radio" name="q43" value="A"> A) 1.38</label>
+                <label><input type="radio" name="q43" value="B"> B) 1.39</label>
+                <label><input type="radio" name="q43" value="C"> C) 1.40</label>
+                <label><input type="radio" name="q43" value="D"> D) 1.386</label>
+            </div>
+        </div>
+
+        <!-- Question 44 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 44</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Round off the number 4.334 to three significant figures.</p>
+            <div class="options">
+                <label><input type="radio" name="q44" value="A"> A) 4.33</label>
+                <label><input type="radio" name="q44" value="B"> B) 4.34</label>
+                <label><input type="radio" name="q44" value="C"> C) 4.30</label>
+                <label><input type="radio" name="q44" value="D"> D) 4.335</label>
+            </div>
+        </div>
+
+        <!-- Question 45 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 45</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Round off the number 6.25 to two significant figures.</p>
+            <div class="options">
+                <label><input type="radio" name="q45" value="A"> A) 6.3</label>
+                <label><input type="radio" name="q45" value="B"> B) 6.2</label>
+                <label><input type="radio" name="q45" value="C"> C) 6.0</label>
+                <label><input type="radio" name="q45" value="D"> D) 6.25</label>
+            </div>
+        </div>
+
+        <!-- Question 46 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 46</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Round off the number 6.35 to two significant figures.</p>
+            <div class="options">
+                <label><input type="radio" name="q46" value="A"> A) 6.3</label>
+                <label><input type="radio" name="q46" value="B"> B) 6.4</label>
+                <label><input type="radio" name="q46" value="C"> C) 6.5</label>
+                <label><input type="radio" name="q46" value="D"> D) 6.0</label>
+            </div>
+        </div>
+
+        <!-- Question 47 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 47</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">The method used to convert units from one system to another is called factor label method or unit factor method. It is also known as:</p>
+            <div class="options">
+                <label><input type="radio" name="q47" value="A"> A) Variable transformation</label>
+                <label><input type="radio" name="q47" value="B"> B) Dimensional analysis</label>
+                <label><input type="radio" name="q47" value="C"> C) Significant adjustment</label>
+                <label><input type="radio" name="q47" value="D"> D) Constant multiplier method</label>
+            </div>
+        </div>
+
+        <!-- Question 48 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 48</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">Using dimensional analysis, exactly how many centimeters are in 3 inches? (Given: 1 inch = 2.54 cm exact)</p>
+            <div class="options">
+                <label><input type="radio" name="q48" value="A"> A) 7.6 cm</label>
+                <label><input type="radio" name="q48" value="B"> B) 7.62 cm</label>
+                <label><input type="radio" name="q48" value="C"> C) 7.50 cm</label>
+                <label><input type="radio" name="q48" value="D"> D) 8.0 cm</label>
+            </div>
+        </div>
+
+        <!-- Question 49 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 49</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">A jug contains 2 L of milk. Calculate the volume of the milk in m<sup>3</sup>.</p>
+            <div class="options">
+                <label><input type="radio" name="q49" value="A"> A) 2 × 10<sup>-3</sup> m<sup>3</sup></label>
+                <label><input type="radio" name="q49" value="B"> B) 2 × 10<sup>3</sup> m<sup>3</sup></label>
+                <label><input type="radio" name="q49" value="C"> C) 20 m<sup>3</sup></label>
+                <label><input type="radio" name="q49" value="D"> D) 0.02 m<sup>3</sup></label>
+            </div>
+        </div>
+
+        <!-- Question 50 -->
+        <div class="question-card">
+            <div class="question-header">
+                <span class="question-number">Question 50</span>
+                <span class="ncert-tag">[NCERT 1.4]</span>
+            </div>
+            <p class="question-text">How many seconds are there in 2 days?</p>
+            <div class="options">
+                <label><input type="radio" name="q50" value="A"> A) 86400 s</label>
+                <label><input type="radio" name="q50" value="B"> B) 172800 s</label>
+                <label><input type="radio" name="q50" value="C"> C) 2880 s</label>
+                <label><input type="radio" name="q50" value="D"> D) 7200 s</label>
+            </div>
+        </div>
+
+        <div class="submit-container">
+            <button id="submit-btn" onclick="checkAnswers()">Submit Test</button>
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'C', q2: 'A', q3: 'B', q4: 'B', q5: 'B',
+                q6: 'C', q7: 'B', q8: 'C', q9: 'C', q10: 'C',
+                q11: 'C', q12: 'C', q13: 'B', q14: 'C', q15: 'C',
+                q16: 'B', q17: 'C', q18: 'C', q19: 'A', q20: 'C',
+                q21: 'B', q22: 'B', q23: 'B', q24: 'B', q25: 'B',
+                q26: 'B', q27: 'B', q28: 'B', q29: 'A', q30: 'B',
+                q31: 'B', q32: 'C', q33: 'C', q34: 'D', q35: 'B',
+                q36: 'B', q37: 'D', q38: 'D', q39: 'A', q40: 'C',
+                q41: 'C', q42: 'B', q43: 'B', q44: 'A', q45: 'B',
+                q46: 'B', q47: 'B', q48: 'B', q49: 'A', q50: 'B'
+            };
+
+            let score = 0;
+            let total = 50;
+
+            for (let i = 1; i <= total; i++) {
+                let qName = 'q' + i;
+                let selected = document.querySelector('input[name="' + qName + '"]:checked');
+                let options = document.getElementsByName(qName);
+
+                // Reset backgrounds
+                options.forEach(opt => {
+                    opt.parentElement.style.backgroundColor = '#f9fbfc';
+                    opt.parentElement.style.borderColor = '#dcdde1';
+                });
+
+                if (selected) {
+                    if (selected.value === answers[qName]) {
+                        score++;
+                        selected.parentElement.style.backgroundColor = '#d4edda';
+                        selected.parentElement.style.borderColor = '#c3e6cb';
+                    } else {
+                        selected.parentElement.style.backgroundColor = '#f8d7da';
+                        selected.parentElement.style.borderColor = '#f5c6cb';
+                        // Highlight the correct answer for the user to learn
+                        options.forEach(opt => {
+                            if (opt.value === answers[qName]) {
+                                opt.parentElement.style.backgroundColor = '#d4edda';
+                                opt.parentElement.style.borderColor = '#c3e6cb';
+                            }
+                        });
+                    }
+                } else {
+                    // Highlight correct answer in yellow if skipped
+                    options.forEach(opt => {
+                        if (opt.value === answers[qName]) {
+                            opt.parentElement.style.backgroundColor = '#fff3cd';
+                            opt.parentElement.style.borderColor = '#ffeeba';
+                        }
+                    });
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `<h2>Your Score: ${score} / ${total}</h2>
+            <p>Scroll up to review your results. Correct selections are <strong>green</strong>, incorrect are <strong>red</strong>, and correct answers you missed are <strong>yellow</strong>.</p>`;
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
